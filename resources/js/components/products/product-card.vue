@@ -8,7 +8,7 @@
 export default {
     name: "product-card",
     mounted() {
-        console.log('Example component mounted.')
+        console.log('Product Card mounted.')
     }
 
 }
