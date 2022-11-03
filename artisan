@@ -19,6 +19,17 @@ require __DIR__.'/vendor/autoload.php';
 
 $app = require_once __DIR__.'/bootstrap/app.php';
 
+// swagger openapi
+//require("vendor/autoload.php");
+////$openapi = \OpenApi\Generator::scan('http://localhost:3000/phpprojects/ProductsVueProj');
+//$openapi = \OpenApi\Generator::scan('C:\wamp64\www\PHPprojects\ProductsVueProj');
+//header('Content-Type: application/x-yaml');
+////echo $openapi->toYaml();
+//
+////$file = dir . "public/botPages/hp.html";
+//fopen("test.yml", "w");
+//file_put_contents("test", $openapi->toYaml());
+
 /*
 |--------------------------------------------------------------------------
 | Run The Artisan Application
