@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ProductController;
+use App\Http\Controllers\api\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +18,8 @@ use Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 
-Route::get('/product', [ProductController::class, 'index'])->name('product');
+//Route::get('/product', [ProductController::class, 'index'])->name('product');
+
+Route::get('{any}', function () {
+    return view('app');
+})->where('any', '.*');
